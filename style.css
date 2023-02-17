@@ -145,8 +145,9 @@ body {
   align-items: center;
 }
 
-html body div#hidden-container.container div#score-reader p span#rating{
-  display: inline-block; margin: 0 0.3rem
+#rating{
+  display: inline-block; margin: 0 0.3rem;
+  color:#fc7614
 }
 
 #thanks-note {
