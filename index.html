@@ -2,40 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./interactive-rating-component-main/images/favicon-32x32.png">
     <link rel="stylesheet" href="./style.css" />
     <title>Interactive rating component</title>
   </head>
   <body>
-    <div class="container">
-      <div class="logo">
+    <div class="container" id="main-container">
+      <header class="logo">
         <img
           id="icon-star"
           src="./interactive-rating-component-main/images/icon-star.svg"
           alt=""
         />
-      </div>
+      </header>
       <div class="content">
         <h1>How did we do?</h1>
         <p>
-        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
-      </p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
       </div>
       <section id="score">
-        <button class="rate" type="button">1</button>
-        <button class="rate" type="button">2</button>
-        <button class="rate" type="button">3</button>
-        <button class="rate" type="button">4</button>
-        <button class="rate" type="button">5</button>
+        <button class="rate" value="1">1</button>
+        <button class="rate" value="2">2</button>
+        <button class="rate" value="3">3</button>
+        <button class="rate" value="4">4</button>
+        <button class="rate" value="5">5</button>
       </section>
       <div class="submit">
-        <button class="buttom-submit" type="submit">SUBMIT</button>
+        <button class="submit-btn" id="submit-btn" type="submit">SUBMIT</button>
       </div>
     </div>
 
-    <!-- <div class="container"> -->
+    <div class="container hidden" id="hidden-container">
+      <div id="thanks-header">
+        <img
+          id="illustration-thank-you"
+          src="./interactive-rating-component-main/images/illustration-thank-you.svg"
+          alt=""
+        />
+      </div>
+      <div id="score-reader">
+        <p>
+          You selected
+          <span id="rating"></span>
+          out of 5
+        </p>
+      </div>
 
+      <div class="content" id="thanks-note">
+        <h1>Thank you!</h1>
+        <p>
+          we appereciate you taking time to give a rating. If you ever need more
+          support, don't hesitate to get in touch!
+        </p>
+      </div>
+      <div class="submit">
+        <button class="submit-btn" id="rate-again" type="submit">
+          RATE AGAIN
+        </button>
+      </div>
     </div>
+
+    <!-- Thank you state end -->
+    <footer>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+        >. Coded by <a href="#">Eduardo Genes</a>.
+      </div>
+      <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+      </style>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
