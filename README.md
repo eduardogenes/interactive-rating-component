@@ -1,2 +1,2 @@
+https://eduardogenes.github.io/interactive-rating-component/
 
-https://eduardogenes.github.io/test-portfolio/
